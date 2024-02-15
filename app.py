@@ -1,2 +1,2 @@
-def add(a, b):
+deыфывf add(a, b):
     return a + b
