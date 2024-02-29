@@ -32,8 +32,8 @@ jobs:
           type=ref,event=tag
 
     - name: Get short commit ID
-        id: shortsha
-        run: echo "::set-output name=sha::$(git rev-parse --short $GITHUB_SHA)"
+      id: shortsha
+      run: echo "::set-output name=sha::$(git rev-parse --short $GITHUB_SHA)"
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
