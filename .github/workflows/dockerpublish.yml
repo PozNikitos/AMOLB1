@@ -37,5 +37,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: "nikitapozitiv4ik/molb1:$GITHUB_SHA"
+        tags: nikitapozitiv4ik/molb1:${{ steps.shortsha.outputs.sha }}
         labels: ${{ steps.metadata.outputs.labels }}
